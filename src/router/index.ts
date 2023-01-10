@@ -9,7 +9,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Layout",
-    component: () => import("../views/Layout.vue"),
+    component: () => import("../views/flex/index.vue"),
   },
 ]
 
