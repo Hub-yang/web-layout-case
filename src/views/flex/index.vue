@@ -99,7 +99,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const justifyContentVal = ref("")
 const isWrap = ref(false)
 const isHeight = ref(true)
@@ -292,7 +292,7 @@ const options4 = [
 
 <style scoped lang="scss">
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
   background-color: #494866;
