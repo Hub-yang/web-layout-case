@@ -1,2 +1,14 @@
 $base_nav_height:50px;
 $theme_bgColor:#494864;
+
+
+@mixin base_view_contanier {
+  margin: 0 auto;
+  width: 50vw;
+  background: white;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 3vh;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
+}

@@ -18,9 +18,9 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("../views/flex/index.vue"),
       },
       {
-        path: "test",
-        name: "test",
-        component: () => import("../views/test/index.vue"),
+        path: "width",
+        name: "width",
+        component: () => import("../views/width/index.vue"),
       },
     ],
   },

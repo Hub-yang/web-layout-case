@@ -65,7 +65,6 @@
     <div
       class="main-area"
       :style="{
-        width: isWrap ? '55%' : '55%',
         flexWrap: wrapVal,
         flexDirection: flexDirectionVal,
         justifyContent: justifyContentVal,
@@ -295,7 +294,7 @@ const options4 = [
   height: 100%;
   width: 100vw;
   overflow: hidden;
-  background-color: #494866;
+  background-color: $theme_bgColor;
 
   .operate-area {
     height: 10%;
@@ -326,12 +325,8 @@ const options4 = [
   }
 
   .main-area {
-    margin: 0 auto;
-    width: 55%;
+    @include base_view_contanier;
     height: 60%;
-    background-color: #fff;
-    border: 3px solid #7b857f;
-    border-radius: 10px;
     display: flex;
     .item {
       border-radius: 8px;

@@ -8,10 +8,10 @@
       flex属性demo
     </button>
     <button
-      :class="curPath === 'test' ? 'active' : ''"
-      @click="handleRouterLink('test')"
+      :class="curPath === 'width' ? 'active' : ''"
+      @click="handleRouterLink('width')"
     >
-      test
+      width
     </button>
   </nav>
   <main class="main_container">
@@ -43,6 +43,8 @@ watch(
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #000;
+  gap: 5px;
   button {
     min-width: 50px;
     &.active {
@@ -51,6 +53,6 @@ watch(
   }
 }
 .main_container {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 50px - 2px);
 }
 </style>
