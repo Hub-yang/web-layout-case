@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-const baseWidth = ref("")
+const baseWidth = ref("auto")
 
 const itemList = [
   {
@@ -110,10 +110,7 @@ const options = [
 
 <style scoped lang="scss">
 .container {
-  height: 100%;
-  width: 100vw;
-  overflow: hidden;
-  background-color: $theme_bgColor;
+  @include base_main_container;
 
   .operate-area {
     height: 10%;
@@ -124,19 +121,6 @@ const options = [
     gap: 20px;
     justify-content: center;
     align-items: center;
-    .switch-box {
-      display: flex;
-      align-items: center;
-      label {
-        display: inline-block;
-        text-align: end;
-      }
-      input {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-      }
-    }
 
     .select-box select {
       min-width: 150px;
@@ -150,7 +134,7 @@ const options = [
     gap: 10px;
 
     .item {
-      transition: all 0.2s ease;
+      transition: all 0.5s ease;
       border-radius: 8px;
       font-weight: bolder;
       span {

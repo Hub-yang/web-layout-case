@@ -291,10 +291,7 @@ const options4 = [
 
 <style scoped lang="scss">
 .container {
-  height: 100%;
-  width: 100vw;
-  overflow: hidden;
-  background-color: $theme_bgColor;
+  @include base_main_container;
 
   .operate-area {
     height: 10%;
@@ -328,6 +325,7 @@ const options4 = [
     @include base_view_contanier;
     height: 60%;
     display: flex;
+    gap: 5px;
     .item {
       border-radius: 8px;
       border: 2px solid #2c38e0;

@@ -2,16 +2,12 @@
   <!-- 导航栏 -->
   <nav class="nav_container">
     <button
-      :class="curPath === 'flex' ? 'active' : ''"
-      @click="handleRouterLink('flex')"
+      v-for="btn in btnList"
+      :key="btn.path"
+      :class="curPath === btn.path ? 'active' : ''"
+      @click="handleRouterLink(btn.path)"
     >
-      flex属性demo
-    </button>
-    <button
-      :class="curPath === 'width' ? 'active' : ''"
-      @click="handleRouterLink('width')"
-    >
-      width
+      {{ btn.text }}
     </button>
   </nav>
   <main class="main_container">
@@ -23,6 +19,13 @@
 const router = useRouter()
 const route = useRoute()
 const curPath = ref("")
+
+const btnList = ref([
+  { path: "flex", text: "flex属性demo" },
+  { path: "width", text: "width" },
+  { path: "centered", text: "水平垂直居中" },
+  { path: "contour", text: "等高布局" },
+])
 
 const handleRouterLink = (path) => {
   router.push(path)

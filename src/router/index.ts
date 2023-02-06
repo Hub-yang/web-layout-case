@@ -22,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
         name: "width",
         component: () => import("../views/width/index.vue"),
       },
+      {
+        path: "centered",
+        name: "centered",
+        component: () => import("../views/classicalLayout/centered.vue"),
+      },
+      {
+        path: "contour",
+        name: "contour",
+        component: () => import("../views/classicalLayout/contour.vue"),
+      },
     ],
   },
 ]

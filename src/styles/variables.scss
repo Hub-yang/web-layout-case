@@ -2,6 +2,13 @@ $base_nav_height:50px;
 $theme_bgColor:#494864;
 
 
+@mixin base_main_container {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $theme_bgColor;
+}
+
 @mixin base_view_contanier {
   margin: 0 auto;
   width: 50vw;
