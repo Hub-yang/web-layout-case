@@ -32,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "contour",
         component: () => import("../views/classicalLayout/contour.vue"),
       },
+      {
+        path: "equalization",
+        name: "equalization",
+        component: () => import("../views/classicalLayout/equalization.vue"),
+      },
     ],
   },
 ]
