@@ -37,6 +37,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "equalization",
         component: () => import("../views/classicalLayout/equalization.vue"),
       },
+      {
+        path: "graillayout",
+        name: "graillayout",
+        component: () => import("../views/classicalLayout/GrailLayout.vue"),
+      },
     ],
   },
 ]
