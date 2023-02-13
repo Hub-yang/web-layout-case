@@ -27,6 +27,7 @@ const btnList = ref([
   { path: "contour", text: "等高布局" },
   { path: "equalization", text: "均分列布局" },
   { path: "graillayout", text: "圣杯布局" },
+  { path: "stickyfooter", text: "stickyfooter布局" },
 ])
 
 const handleRouterLink = (path) => {

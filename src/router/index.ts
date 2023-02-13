@@ -42,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "graillayout",
         component: () => import("../views/classicalLayout/GrailLayout.vue"),
       },
+      {
+        path: "stickyfooter",
+        name: "stickyfooter",
+        component: () => import("../views/classicalLayout/StickyFooter.vue"),
+      },
     ],
   },
 ]
